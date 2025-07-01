@@ -9,8 +9,10 @@ function App(){
   }
   return(
     <div onMouseMove={handleCoordinates} className="mainDiv">
-      <p>X-axis:{coordinates.x}</p>
-      <p>Y-axis: {coordinates.y}</p>
+      <p className="coordinates">X-axis:{coordinates.x}</p>
+      <p className="coordinates">Y-axis: {coordinates.y}</p>
+      <div className="vertical"></div>
+      <div className="horizontal"></div>
     </div>
   )
 }
